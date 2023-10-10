@@ -1,0 +1,25 @@
+{
+  "name": "firefox-react-bot",
+  "version": "1.0.0",
+  "description": "Records :fire: reactions and logs the messages they were reacted to",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs716/firefox-react-bot.git"
+  },
+  "author": "Cameron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cs716/firefox-react-bot/issues"
+  },
+  "homepage": "https://github.com/cs716/firefox-react-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "sqlite3": "^5.1.6"
+  }
+}
