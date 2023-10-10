@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Records :fire: reactions and logs the messages they were reacted to",
   "main": "index.js",
+  "engines": {
+    "node": "16.14.2"
+  },
   "scripts": {
     "test": "node index"
   },
@@ -18,6 +21,7 @@
   "homepage": "https://github.com/cs716/firefox-react-bot#readme",
   "dependencies": {
     "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
     "sqlite3": "^5.1.6"
