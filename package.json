@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Records :fire: reactions and logs the messages they were reacted to",
   "main": "index.js",
-  "engines": {
-    "node": "16.14.2"
-  },
   "scripts": {
     "test": "node index"
   },
