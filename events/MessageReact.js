@@ -14,7 +14,7 @@ module.exports["AddReaction"] = async (reaction, user) => {
     }
 
     const author = reaction.message.author; 
-    if (user.id == author.id)
+    if (user.id == author.id || author.bot)
         return;
 
     await handleMessageReact(reaction.message);
@@ -34,7 +34,7 @@ module.exports["RemoveReaction"] = async (reaction, user) => {
     }
 
     const author = reaction.message.author; 
-    if (user.id == author.id)
+    if (user.id == author.id || author.bot)
         return;
 
     await handleMessageRemove(reaction.message);
