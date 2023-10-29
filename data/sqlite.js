@@ -56,7 +56,7 @@ async function handleMessageRemove(message) {
 function getSavedMessages(userId, page, success) {
     const offset = (page - 1) * 25;
     try {
-        sql.all(`SELECT * FROM quotes WHERE userId='${userId}' LIMIT 25 OFFSET ${offset}`, (err, rows) => {
+        sql.all(`SELECT * FROM quotes WHERE userId='${userId}' ORDER BY rating DESC LIMIT 25 OFFSET ${offset}`, (err, rows) => {
             if (err) {
                 console.error(err);
                 return;
